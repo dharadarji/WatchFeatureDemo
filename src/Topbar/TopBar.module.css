@@ -7,3 +7,49 @@
 .TopBar > img {
     width: 100px;
 }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+  }
+
+  .Menu{
+    float: right;
+    width: 60%;
+  }
+
+  .logo{
+    float: left;
+    width: 20%;
+  }
+
+  .logo > img {
+    width:50%
+  }
+
+  
+  ul.horizontal {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: gray;
+}
+ul.horizontal li {
+    float: left;
+}
+ul.horizontal li a.active {
+    background-color: #04AA6D;
+}
+ul.horizontal li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.rightli{
+    float:right
+}
