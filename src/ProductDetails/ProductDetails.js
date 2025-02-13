@@ -16,10 +16,9 @@ const ProductDetails = (props) => {
     if(pos === props.currentSelectedFeature){
       classArr.push(classes.SelectedFeatureItem) 
     }
-
     return (
       <button onClick={() => props.onFeatureItemClick(pos)} key={pos} className={classArr.join(' ')}>{item}</button>
-    )
+    );
   })
 
   return (

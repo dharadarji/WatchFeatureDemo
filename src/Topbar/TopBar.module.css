@@ -39,7 +39,7 @@ ul {
 ul.horizontal li {
     float: left;
 }
-ul.horizontal li a.active {
+ul.horizontal li.active {
     background-color: #04AA6D;
 }
 ul.horizontal li a {

@@ -15,9 +15,9 @@ const TopBar = () => {
             <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="logo" />
             </div>
             <div>
-              <ul class={classes.horizontal}>
-                <li><Link to="/demo1"><a className={path == '/demo1' ? classes.active : ''}>Demo 1</a></Link></li>
-                <li><Link to="/demo2"><a className={path == '/demo2' ? classes.active : ''}>Demo 2</a></Link></li>
+              <ul className={classes.horizontal}>
+                <li className={path === '/demo1' ? classes.active : ''}><Link to="/demo1">Demo 1</Link></li>
+                <li className={path === '/demo2' ? classes.active : ''}><Link to="/demo2">Demo 2</Link></li>
               </ul>
             </div>
         </nav>

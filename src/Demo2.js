@@ -94,7 +94,7 @@ class Demo2 extends Component {
     )
     return(
       <div className="App">
-      <button type="button" class="btn btn-primary" onClick={this.buttonClick}>{this.state.showBlogs ? 'Hide Blog' : 'Show Blog'}</button>
+      <button type="button" className="btn btn-primary" onClick={this.buttonClick}>{this.state.showBlogs ? 'Hide Blog' : 'Show Blog'}</button>
       <br/><br/>
       {this.state.showBlogs ? blogCards : null}
      

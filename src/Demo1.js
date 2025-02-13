@@ -1,6 +1,5 @@
 import React ,{ Component } from "react";
 import ProductData from "./Utils/ProductData";
-import TopBar from "./Topbar/TopBar";
 import classes from './App.module.css'
 import ProductPreview from "./ProductPreview/ProductPreview";
 import ProductDetails from './ProductDetails/ProductDetails';
@@ -19,24 +18,25 @@ class Demo1 extends Component {
       this.setState({
         currenntPreviewImagePosition: pos
       });
+
+      console.log('color ' + this.state.currenntPreviewImagePosition)
   }
 
-  shouldComponentUpdate(nextProps , nextState){
+  // shouldComponentUpdate(nextProps , nextState){
 
-      if(nextState.currenntPreviewImagePosition === this.state.currenntPreviewImagePosition){
-        return false;
-      }
-      return true;
-  } 
+  //     if(nextState.currenntPreviewImagePosition === this.state.currenntPreviewImagePosition){
+  //       return false;
+  //     }
+  //     return true;
+  // } 
 
   onFeatureItemClick = (pos) => {    
     this.setState({
-      currentSelectedFeature : pos
+      currentSelectedFeature: pos
     });
   }
 
   render() {
-    console.log('Rendering..')
     return (
       <div className="App">
         <div className={classes.MainContainer}>
