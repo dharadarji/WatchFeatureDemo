@@ -30,6 +30,11 @@ export default function Page(arg){
      );
 
      break;
+
+     default:
+        return(
+            <h1>Error</h1>
+        )
     }
 
 }
